@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>piano tiles</title>
+</head>
+
+<body>
+
+  <div class="start">
+    <div class="appname">
+    <img id="app-logo" src="th (1).jfif" alt="app-logo">
+    </div>
+    <button>Play</button>
+    <div class="music-buttons">
+      <button id="on-button" onclick="song()"><img id="play-button" src="play.jfif" alt=""></button>
+      <button id="off-button" onclick="songPause()"><img id="pause-button" src="th.jfif" alt=""></button>
+    </div>
+  </div>
+
+  <div id="game" style="display: none;">
+    <div id="game-container">
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+      <div class="line" id="line4"></div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+    <div class="score">
+      <p id="score">0</p>
+    </div>
+  </div>
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">You've completed The Game!</div>
+    <div class="score_text">You've scored 0 points</div>
+    <div class="buttons">
+      <button class="restart">Replay</button>
+    </div>
+  </div>
+  <audio id="audio" src="mainMusic.m4a" hidden>
+    <audio id="play" src="playbtn.mp3" hidden>
+      <audio id="out" src="out.mp3" hidden>
+        <audio id="result" src="result.mp3" hidden>
+
+          <script src="main.js"></script>
+</body>
+
+</html>
